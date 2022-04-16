@@ -1,0 +1,215 @@
+body{
+    color: whitesmoke;
+    width: auto;
+    height: auto;
+    height: min-content;
+    background-color: rosybrown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    top: 0px;
+    position: absolute;
+}
+
+
+header{
+    display: flex;
+    justify-content: left;
+    height: 75px;
+    width: 100vw;
+    background-color: rgb(88, 31, 31);
+    margin: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: left;
+    width: 100vw;
+    background-color: rgb(88, 31, 31);
+    margin: 0;
+}
+
+.main{
+    display: grid;
+    grid-template-areas: 
+        "col1 col2"
+        "CA CL"
+        "addCA addCL"
+        "IPE LTL"
+        "addIPE addLTL"
+        "INT TOT"
+        "addINT TOT"
+        ". TOT";
+    grid-template-rows: 50px 30px auto 30px auto 30px auto auto;
+    height: 100vh;
+    width: 100vw;
+    font-weight: bold;
+    color: black;
+}
+
+#assets{
+    grid-area: col1;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#liabilities{
+    grid-area: col2;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.CA{
+    grid-area: CA;
+    border-style: solid;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-color: rgb(88, 31, 31);
+    padding-left: 15px;
+}
+
+.addCA{
+    grid-area: addCA;
+    border-left-style: solid;
+    border-color: rgb(88, 31, 31);
+}
+
+.CL{
+    grid-area: CL;
+    border-style: solid;
+    border-bottom-style: none;
+    border-color: rgb(88, 31, 31);
+    padding-left: 15px;
+}
+
+.addCL{
+    grid-area: addCL;
+    border-style: solid;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-color: rgb(88, 31, 31);
+}
+
+.IPE{
+    grid-area: IPE;
+    border-style: solid;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-color: rgb(88, 31, 31);
+    padding-left: 15px;
+}
+
+.addIPE{
+    grid-area: addIPE;
+    border-left-style: solid;
+    border-color: rgb(88, 31, 31);
+}
+
+.LTL{
+    grid-area: LTL;
+    border-style: solid;
+    border-bottom-style: none;
+    border-color: rgb(88, 31, 31);
+    padding-left: 15px;
+}
+
+.addLTL{
+    grid-area: addLTL;
+    border-style: solid;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-color: rgb(88, 31, 31);
+}
+
+.int{
+    grid-area: INT;
+    border-style: solid;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-color: rgb(88, 31, 31);
+    padding-left: 15px;
+}
+
+.addINT{
+    grid-area: addINT;
+    border-style: solid;
+    border-top-style: none;
+    border-right-style: none;
+    border-color: rgb(88, 31, 31);
+
+}
+
+.TOTAL{
+    grid-area: TOT;
+    border-style: solid;
+    border-bottom-style: none;
+    border-color: rgb(88, 31, 31);
+    padding-left: 15px;
+}
+
+.TOTAL label{
+    display: block;
+    padding-bottom: 15px;
+}
+
+.addCA,
+.addCL,
+.addINT,
+.addIPE,
+.addLTL{
+    text-align: center;
+}
+
+button{
+    font-size: large;
+    font-weight: bold;
+}
+
+.box{
+    display:block;
+    text-align: right;
+    padding: 10px;
+}
+
+.CLinput{
+    width: 250px;
+}
+
+.CLlabel{
+    padding-right: 15px;
+}
+
+.CAinput{
+    width: 250px;
+}
+
+.CAlabel{
+    padding-right: 15px;
+}
+
+.IPEinput{
+    width: 250px;
+}
+
+.IPElabel{
+    padding-right: 15px;
+}
+
+.INTinput{
+    width: 250px;
+}
+
+.INTlabel{
+    padding-right: 15px;
+}
+
+.LTLinput{
+    width: 250px;
+}
+
+.LTLlabel{
+    padding-right: 15px;
+}
+
+.totalLabels{
+    padding: 10px
+}

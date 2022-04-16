@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bellarmine Financials</title>
+        <link rel="stylesheet" href="css/myStyle.css" />
+    </head>
+
+    <div id="wrapper">
+        <header>
+            <h1>Bellarmine Financials - Balance Sheet Calculator</h1>
+        </header>
+
+
+        <body>
+
+            <div class="main">
+                <label for="assets" id="assets">Assets</label>
+                <label for="liabilities" id="liabilities">Liabilities</label>
+
+                <div class="CA">
+                    <label for="currentAssets" id="CA">Current Assets</label>
+                </div>
+
+                <div id="addCA" class="addCA">
+                    <button id="openCA" onclick="openCA()">Add Current Assets</button>   
+                </div>
+                
+                <div class="CL">
+                    <label for="currentLiabilities" id="CL">Current Liabilities</label>
+                </div>
+
+                <div id="addCL" class="addCL">
+                    <button id="openCL" onclick="openCL()">Add Current Liabilities</button>   
+                </div>
+
+                <div class="IPE">
+                    <label for="IPE" id="IPE">Investment Property & Equipment</label>
+                </div>
+
+                <div id="addIPE" class="addIPE">
+                    <button id="openIPE" onclick="openIPE()">Add Investment Property and Equipment</button>   
+                </div>
+
+                <div class="LTL">
+                    <label for="longtermLiabilities" id="LTL">Long-Term Liabilities</label>
+                </div>
+
+                <div id="addLTL" class="addLTL">
+                    <button id="openLTL" onclick="openLTL()">Add Long-Term Liabilities</button>   
+                </div>
+
+                <div class="int">
+                    <label for="intangibles" id="int">Intangibles</label>
+                </div>
+
+                <div id="addINT" class="addINT">
+                    <button id="openINT" onclick="openINT()">Add Intangibles</button>   
+                </div>
+                
+                <div class="TOTAL">
+                    <h2>Total Poisiton:</h1>
+                    <button id="total" onclick="calculate()">Calculate Position</button>
+                    <label for="totalAssets" class="totalLabels" id="TA">Total Assets:</label>
+                    <label for="totalLiabilities" class="totalLabels" id="TL">Total Liabilities:</label>
+                    <label for="position" class="totalLabels" id="POS">Position:</label>
+                </div>
+            
+            </div>
+        </body>
+        
+        <footer>
+            <label>Copyright Bellarmine University 2022</label>
+        </footer>
+        <script src='js/properties.js'></script>
+    </div>
+</html>
